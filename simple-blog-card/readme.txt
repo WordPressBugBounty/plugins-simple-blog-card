@@ -2,10 +2,10 @@
 Contributors: Katsushi Kawamori, ishitaka
 Donate link: https://shop.riverforest-wp.info/donate/
 Tags: block, blogcard, external link, internal link, linkcard
-Requires at least: 5.0
+Requires at least: 6.6
 Requires PHP: 8.0
-Tested up to: 6.6
-Stable tag: 2.31
+Tested up to: 6.7
+Stable tag: 2.32
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,10 @@ none
 5. Settings
 
 == Changelog ==
+
+= [2.32] 2024/11/13 =
+* Fix - Rebuilt javascript.
+* Change - Changed the required version of WordPress.
 
 = [2.31] 2024/06/15 =
 * Fix - Issues with getting site information for WP-CLI.

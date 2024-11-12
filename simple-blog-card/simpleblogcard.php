@@ -3,7 +3,7 @@
  * Plugin Name: Simple Blog Card
  * Plugin URI:  https://wordpress.org/plugins/simple-blog-card/
  * Description: Get OGP and display blog card.
- * Version:     2.31
+ * Version:     2.32
  * Author:      Katsushi Kawamori
  * Author URI:  https://riverforest-wp.info/
  * License:     GPLv2 or later

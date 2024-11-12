@@ -57,7 +57,7 @@ class SimpleBlogCardAdmin {
 			$this_plugin = 'simple-blog-card/simpleblogcard.php';
 		}
 		if ( $file === $this_plugin ) {
-			$links[] = '<a href="' . admin_url( 'options-general.php?page=simpleblogcard' ) . '">' . __( 'Settings' ) . '</a>';
+			$links[] = '<a href="' . admin_url( 'options-general.php?page=simpleblogcard' ) . '">' . __( 'Settings', 'simple-blog-card' ) . '</a>';
 		}
 			return $links;
 	}
@@ -99,13 +99,18 @@ class SimpleBlogCardAdmin {
 	public function plugin_options() {
 
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_die( esc_html__( 'You do not have sufficient permissions to access this page.' ) );
+			wp_die( esc_html__( 'You do not have sufficient permissions to access this page.', 'simple-blog-card' ) );
 		}
 
-		printf(
-			'<div class="wrap" id="simple-blog-card-settings">%s</div>',
-			esc_html__( 'Loading…', 'simple-blog-card' )
-		);
+		global $wp_version;
+		$requires = '6.6';
+		if ( version_compare( $wp_version, $requires, '>=' ) ) {
+			$admin_screen = esc_html__( 'Loading…', 'simple-blog-card' );
+		} else {
+			/* translators: WordPress requires version */
+			$admin_screen = sprintf( esc_html__( 'WordPress %s or higher is required to view this screen.', 'simple-blog-card' ), $requires );
+		}
+		printf( '<div class="wrap" id="simple-blog-card-settings">%s</div>', esc_html( $admin_screen ) );
 	}
 
 	/** ==================================================
@@ -332,20 +337,20 @@ class SimpleBlogCardAdmin {
 			'credit',
 			array(
 				'links'          => __( 'Various links of this plugin', 'simple-blog-card' ),
-				'plugin_version' => __( 'Version:' ) . ' ' . $plugin_ver_num,
+				'plugin_version' => __( 'Version:', 'simple-blog-card' ) . ' ' . $plugin_ver_num,
 				/* translators: FAQ Link & Slug */
 				'faq'            => sprintf( __( 'https://wordpress.org/plugins/%s/faq', 'simple-blog-card' ), $slug ),
 				'support'        => 'https://wordpress.org/support/plugin/' . $slug,
 				'review'         => 'https://wordpress.org/support/view/plugin-reviews/' . $slug,
 				'translate'      => 'https://translate.wordpress.org/projects/wp-plugins/' . $slug,
 				/* translators: Plugin translation link */
-				'translate_text' => sprintf( __( 'Translations for %s' ), $plugin_name ),
+				'translate_text' => sprintf( __( 'Translations for %s', 'simple-blog-card' ), $plugin_name ),
 				'facebook'       => 'https://www.facebook.com/katsushikawamori/',
 				'twitter'        => 'https://twitter.com/dodesyo312',
 				'youtube'        => 'https://www.youtube.com/channel/UC5zTLeyROkvZm86OgNRcb_w',
 				'donate'         => __( 'https://shop.riverforest-wp.info/donate/', 'simple-blog-card' ),
 				'donate_text'    => __( 'Please make a donation if you like my work or would like to further the development of this plugin.', 'simple-blog-card' ),
-				'donate_button'  => __( 'Donate to this plugin &#187;' ),
+				'donate_button'  => __( 'Donate to this plugin &#187;', 'simple-blog-card' ),
 			)
 		);
 	}
