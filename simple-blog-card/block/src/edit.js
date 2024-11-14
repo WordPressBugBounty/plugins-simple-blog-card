@@ -13,6 +13,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				attributes = { attributes }
 			/>
 			<TextControl
+				__nextHasNoMarginBottom
 				label = 'URL'
 				value = { attributes.url }
 				onChange = { ( value ) => setAttributes( { url: value } ) }
@@ -20,11 +21,13 @@ export default function Edit( { attributes, setAttributes } ) {
 
 			<InspectorControls>
 				<TextControl
+					__nextHasNoMarginBottom
 					label = 'URL'
 					value = { attributes.url }
 					onChange = { ( value ) => setAttributes( { url: value } ) }
 				/>
 				<RangeControl
+					__nextHasNoMarginBottom
 					label = { __( 'Description length', 'simple-blog-card' ) }
 					max = { 300 }
 					min = { 0 }
@@ -32,6 +35,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					onChange = { ( value ) => setAttributes( { dessize: value } ) }
 				/>
 				<RangeControl
+					__nextHasNoMarginBottom
 					label = { __( 'Image sizes', 'simple-blog-card' ) }
 					max = { 200 }
 					min = { 0 }
@@ -60,6 +64,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					onChange = { ( value ) => setAttributes( { color: value } ) }
 				/>
 				<RangeControl
+					__nextHasNoMarginBottom
 					label = { __( 'Border color width', 'simple-blog-card' ) }
 					max = { 15 }
 					min = { 0 }
@@ -67,11 +72,13 @@ export default function Edit( { attributes, setAttributes } ) {
 					onChange = { ( value ) => setAttributes( { color_width: value } ) }
 				/>
 				<TextControl
+					__nextHasNoMarginBottom
 					label = { __( 'Title', 'simple-blog-card' ) }
 					value = { attributes.title }
 					onChange = { ( value ) => setAttributes( { title: value } ) }
 				/>
 				<RangeControl
+					__nextHasNoMarginBottom
 					label = { __( 'Title line height', 'simple-blog-card' ) }
 					max = { 300 }
 					min = { 10 }
@@ -79,11 +86,13 @@ export default function Edit( { attributes, setAttributes } ) {
 					onChange = { ( value ) => setAttributes( { t_line_height: value } ) }
 				/>
 				<TextControl
+					__nextHasNoMarginBottom
 					label = { __( 'Description', 'simple-blog-card' ) }
 					value = { attributes.description }
 					onChange = { ( value ) => setAttributes( { description: value } ) }
 				/>
 				<RangeControl
+					__nextHasNoMarginBottom
 					label = { __( 'Description line height', 'simple-blog-card' ) }
 					max = { 300 }
 					min = { 10 }
@@ -91,6 +100,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					onChange = { ( value ) => setAttributes( { d_line_height: value } ) }
 				/>
 				<ToggleControl
+					__nextHasNoMarginBottom
 					label = { __( 'Open in new tab', 'simple-blog-card' ) }
 					checked = { attributes.target_blank }
 					onChange = { ( value ) => setAttributes( { target_blank: value } ) }

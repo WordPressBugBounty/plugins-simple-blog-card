@@ -91,6 +91,7 @@ const SimpleBlogCardAdmin = () => {
 	if ( typeof desSize !== 'undefined' ) {
 		items_dessize.push(
 			<RangeControl
+				__nextHasNoMarginBottom
 				max = { 300 }
 				min = { 0 }
 				value = { desSize }
@@ -104,6 +105,7 @@ const SimpleBlogCardAdmin = () => {
 	if ( typeof imgSize !== 'undefined' ) {
 		items_imgsize.push(
 			<RangeControl
+				__nextHasNoMarginBottom
 				max = { 300 }
 				min = { 0 }
 				value={ imgSize }
@@ -154,6 +156,7 @@ const SimpleBlogCardAdmin = () => {
 	if ( typeof colorWidth !== 'undefined' ) {
 		items_colorwidth.push(
 			<RangeControl
+				__nextHasNoMarginBottom
 				max = { 15 }
 				min = { 0 }
 				value={ colorWidth }
@@ -167,6 +170,7 @@ const SimpleBlogCardAdmin = () => {
 	if ( typeof tlineHeight !== 'undefined' ) {
 		items_t_line_height.push(
 			<RangeControl
+				__nextHasNoMarginBottom
 				max = { 300 }
 				min = { 10 }
 				value={ tlineHeight }
@@ -180,6 +184,7 @@ const SimpleBlogCardAdmin = () => {
 	if ( typeof dlineHeight !== 'undefined' ) {
 		items_d_line_height.push(
 			<RangeControl
+				__nextHasNoMarginBottom
 				max = { 300 }
 				min = { 10 }
 				value={ dlineHeight }
@@ -193,6 +198,7 @@ const SimpleBlogCardAdmin = () => {
 	if ( typeof targetBlank !== 'undefined' ) {
 		items_target_blank.push(
 			<ToggleControl
+				__nextHasNoMarginBottom
 				checked={ targetBlank }
 				onChange={ ( value ) => updatetargetBlank( value ) }
 			/>
@@ -226,6 +232,7 @@ const SimpleBlogCardAdmin = () => {
 	if ( typeof timeOut !== 'undefined' ) {
 		items_timeout.push(
 			<RangeControl
+				__nextHasNoMarginBottom
 				max = { 30 }
 				min = { 3 }
 				value={ timeOut }

@@ -5,7 +5,7 @@ Tags: block, blogcard, external link, internal link, linkcard
 Requires at least: 6.6
 Requires PHP: 8.0
 Tested up to: 6.7
-Stable tag: 2.32
+Stable tag: 2.33
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ none
 5. Settings
 
 == Changelog ==
+
+= [2.33] 2024/11/14 =
+* Fix - Rebuilt javascript.
 
 = [2.32] 2024/11/13 =
 * Fix - Rebuilt javascript.
