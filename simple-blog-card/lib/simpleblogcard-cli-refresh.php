@@ -2,7 +2,7 @@
 /**
  * Cli Name:    Simple Blog Card refresh
  * Description: Remove all cache and regenerate.
- * Version:     1.03
+ * Version:     1.04
  * Author:      Katsushi Kawamori
  * Author URI:  https://riverforest-wp.info/
  * License:     GPLv2 or later
@@ -27,9 +27,10 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-/** ==================================================
- * Simple Blog Card refresh command
+/**
+ * This is a command from the Simple Blog Card plugin that remove all cache and regenerate.
  *
+ * @when after_wp_load
  * @since 1.00
  */
 function simpleblogcard_refresh_command() {

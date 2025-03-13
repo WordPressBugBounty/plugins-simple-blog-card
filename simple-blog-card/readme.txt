@@ -5,7 +5,7 @@ Tags: block, blogcard, external link, internal link, linkcard
 Requires at least: 6.6
 Requires PHP: 8.0
 Tested up to: 6.7
-Stable tag: 2.33
+Stable tag: 2.34
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ none
 5. Settings
 
 == Changelog ==
+
+= [2.34] 2025/03/13 =
+* Added - Added help description for WP-CLI command.
 
 = [2.33] 2024/11/14 =
 * Fix - Rebuilt javascript.
