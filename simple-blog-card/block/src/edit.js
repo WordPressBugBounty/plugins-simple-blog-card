@@ -14,6 +14,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			/>
 			<TextControl
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 				label = 'URL'
 				value = { attributes.url }
 				onChange = { ( value ) => setAttributes( { url: value } ) }
@@ -22,12 +23,14 @@ export default function Edit( { attributes, setAttributes } ) {
 			<InspectorControls>
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = 'URL'
 					value = { attributes.url }
 					onChange = { ( value ) => setAttributes( { url: value } ) }
 				/>
 				<RangeControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = { __( 'Description length', 'simple-blog-card' ) }
 					max = { 300 }
 					min = { 0 }
@@ -36,6 +39,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				/>
 				<RangeControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = { __( 'Image sizes', 'simple-blog-card' ) }
 					max = { 200 }
 					min = { 0 }
@@ -65,6 +69,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				/>
 				<RangeControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = { __( 'Border color width', 'simple-blog-card' ) }
 					max = { 15 }
 					min = { 0 }
@@ -73,12 +78,14 @@ export default function Edit( { attributes, setAttributes } ) {
 				/>
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = { __( 'Title', 'simple-blog-card' ) }
 					value = { attributes.title }
 					onChange = { ( value ) => setAttributes( { title: value } ) }
 				/>
 				<RangeControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = { __( 'Title line height', 'simple-blog-card' ) }
 					max = { 300 }
 					min = { 10 }
@@ -87,12 +94,14 @@ export default function Edit( { attributes, setAttributes } ) {
 				/>
 				<TextControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = { __( 'Description', 'simple-blog-card' ) }
 					value = { attributes.description }
 					onChange = { ( value ) => setAttributes( { description: value } ) }
 				/>
 				<RangeControl
 					__nextHasNoMarginBottom
+					__next40pxDefaultSize
 					label = { __( 'Description line height', 'simple-blog-card' ) }
 					max = { 300 }
 					min = { 10 }
@@ -119,6 +128,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						{ label: 'ISO-2022-JP', value: 'ISO-2022-JP' },
 					] }
 					onChange={  ( value ) => setAttributes( { encoding: value } ) }
+					__next40pxDefaultSize
 					__nextHasNoMarginBottom
 				/>
 			</InspectorControls>

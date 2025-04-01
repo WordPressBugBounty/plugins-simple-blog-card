@@ -92,6 +92,7 @@ const SimpleBlogCardAdmin = () => {
 		items_dessize.push(
 			<RangeControl
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 				max = { 300 }
 				min = { 0 }
 				value = { desSize }
@@ -106,6 +107,7 @@ const SimpleBlogCardAdmin = () => {
 		items_imgsize.push(
 			<RangeControl
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 				max = { 300 }
 				min = { 0 }
 				value={ imgSize }
@@ -157,6 +159,7 @@ const SimpleBlogCardAdmin = () => {
 		items_colorwidth.push(
 			<RangeControl
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 				max = { 15 }
 				min = { 0 }
 				value={ colorWidth }
@@ -171,6 +174,7 @@ const SimpleBlogCardAdmin = () => {
 		items_t_line_height.push(
 			<RangeControl
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 				max = { 300 }
 				min = { 10 }
 				value={ tlineHeight }
@@ -185,6 +189,7 @@ const SimpleBlogCardAdmin = () => {
 		items_d_line_height.push(
 			<RangeControl
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 				max = { 300 }
 				min = { 10 }
 				value={ dlineHeight }
@@ -223,6 +228,7 @@ const SimpleBlogCardAdmin = () => {
 				] }
 				onChange={  ( value ) => updateenCoding( value ) }
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 			/>
 		);
 	}
@@ -233,6 +239,7 @@ const SimpleBlogCardAdmin = () => {
 		items_timeout.push(
 			<RangeControl
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 				max = { 30 }
 				min = { 3 }
 				value={ timeOut }
@@ -250,6 +257,7 @@ const SimpleBlogCardAdmin = () => {
 				options={ simpleblogcard_template_label_value }
 				onChange={  ( value ) => updatetemPlate( value ) }
 				__nextHasNoMarginBottom
+				__next40pxDefaultSize
 			/>
 		);
 	}

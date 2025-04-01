@@ -7,13 +7,13 @@
   "icon": "share-alt2",
   "description": "Get OGP and display blog card.",
   "keywords": [
-	"blogcard",
-	"card",
-	"external link",
-	"internal link",
-	"linkcard"
+    "blogcard",
+    "card",
+    "external link",
+    "internal link",
+    "linkcard"
   ],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "textdomain": "simple-blog-card",
   "supports": {
     "customClassName": false,
@@ -22,5 +22,5 @@
   },
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css"
+  "style": "file:./style.css"
 }
