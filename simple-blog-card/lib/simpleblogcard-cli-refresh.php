@@ -27,6 +27,10 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * This is a command from the Simple Blog Card plugin that remove all cache and regenerate.
  *
