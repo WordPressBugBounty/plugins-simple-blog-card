@@ -5,7 +5,7 @@ Tags: block, blogcard, external link, internal link, linkcard
 Requires at least: 6.6
 Requires PHP: 8.0
 Tested up to: 6.8
-Stable tag: 2.36
+Stable tag: 2.37
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ none
 5. Settings
 
 == Changelog ==
+
+= [2.37] 2025/05/10 =
+* Fix - WP-CLI command(`wp simpleblogcard_refresh`) now avoids posting revisions.
 
 = [2.36] 2025/04/01 =
 * Fix - Loading the management screen.
