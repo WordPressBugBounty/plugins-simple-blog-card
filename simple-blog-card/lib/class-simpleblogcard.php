@@ -484,7 +484,7 @@ class SimpleBlogCard {
 			$timeout = 3;
 		}
 
-		$response = wp_remote_get(
+		$response = wp_safe_remote_get(
 			$url,
 			array(
 				'timeout' => $timeout,

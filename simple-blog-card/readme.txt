@@ -4,8 +4,8 @@ Donate link: https://shop.riverforest-wp.info/donate/
 Tags: block, blogcard, external link, internal link, linkcard
 Requires at least: 6.6
 Requires PHP: 8.0
-Tested up to: 6.8
-Stable tag: 2.37
+Tested up to: 6.9
+Stable tag: 2.38
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ none
 5. Settings
 
 == Changelog ==
+
+= [2.38] 2026/02/05 =
+* Fix - Vulnerability related to SSRF.
 
 = [2.37] 2025/05/10 =
 * Fix - WP-CLI command(`wp simpleblogcard_refresh`) now avoids posting revisions.
