@@ -8,6 +8,10 @@
  * @version 1.04
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 ?>
 
 <style>

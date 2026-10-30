@@ -19,6 +19,11 @@
  * @since 1.1.1 Fixed warning for no image. Tweaked CSS.
  * @since 1.1.2 Supported image size.
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 ?>
 <?php $image_span = ( isset( $settings['imgsize'] ) && $settings['imgsize'] <= 100 ) ? 3 : 4; ?>
 <style>

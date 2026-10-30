@@ -490,6 +490,7 @@ class SimpleBlogCard {
 				'timeout' => $timeout,
 				'redirection' => 0,
 				'user-agent' => 'Simple Blog Card; ' . $url,
+				'sslverify' => false,
 			),
 		);
 		if ( ( ! is_wp_error( $response ) ) && ( 200 === wp_remote_retrieve_response_code( $response ) ) ) {
